@@ -1,1 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Michroma&family=Press+Start+2P&family=Ubuntu+Condensed&display=swap');
 @import "tailwindcss";
+
+:root {
+    --font-display: "Press Start 2P", system-ui;
+}
+
+/* Example usage */
+body {
+    font-family: var(--font-display);
+}

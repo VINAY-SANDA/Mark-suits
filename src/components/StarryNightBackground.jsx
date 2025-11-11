@@ -166,24 +166,24 @@ export default function StarryNightBackground({
 
   // Container styles: full-bleed background with content overlay
   return (
-    <div className="relative w-full h-full min-h-screen overflow-hidden">
-      {/* Canvas sits behind content */}
+    <div className="relative w-full min-h-screen">
+      {/* Canvas sits behind content - FIXED */}
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 w-full h-full block"
+        className="fixed inset-0 w-full h-full block"
         style={{ display: 'block' }}
         aria-hidden={true}
       />
 
-      {/* subtle color overlay to tint stars and support text legibility */}
+      {/* subtle color overlay to tint stars and support text legibility - FIXED */}
       <div
         aria-hidden={true}
-        className="absolute inset-0 pointer-events-none"
+        className="fixed inset-0 pointer-events-none"
         style={{ background: 'linear-gradient(180deg, rgba(8,10,25,0.0), rgba(2,6,18,0.6))', opacity: overlayOpacity }}
       />
 
-      {/* content */}
-      <div className="relative z-10 w-full h-full">
+      {/* content - scrollable */}
+      <div className="relative z-10 w-full min-h-screen">
         {children}
       </div>
     </div>
