@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Michroma&family=Press+Start+2P&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Michroma&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Ubuntu+Condensed&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -8,4 +8,149 @@
 /* Example usage */
 body {
     font-family: var(--font-display);
+}
+
+
+
+.textcol{
+    color: #00C2FF;
+}
+
+
+/* Pixelify Sans utility classes
+     Usage:
+         - add class "pixelify-sans" for regular weight
+         - add class "pixelify-sans-700" for bold
+         - or use the font-family directly in components
+
+     Note: If you have the Pixelify Sans font files, add an @font-face block (see below) and place the fonts in /public/fonts or adjust the URL.
+*/
+.pixelify-sans {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pixelify-sans-500 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 500;
+}
+
+
+.mulish-400 {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+.pixelify-sans-700 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 700;
+}
+
+.pixelify-sans-display {
+    font-family: "Pixelify Sans", system-ui, sans-serif;
+}
+
+/* Example @font-face (uncomment and provide correct URLs if you host the font files)
+@font-face {
+    font-family: 'Pixelify Sans';
+    src: url('/fonts/PixelifySans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pixelify Sans';
+    src: url('/fonts/PixelifySans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+*/
+
+/* Template utility with uniquifier - replace <uniquifier> and <weight> before using
+.pixelify-sans-<uniquifier> {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+Example: .pixelify-sans-hero -> .pixelify-sans-hero { font-weight: 700; }
+
+
+/* Animated bug emoji for superscript */
+.bug-emoji {
+    display: inline-block;
+    line-height: 0.8;
+    transform-origin: center;
+    animation: bug-float 3.6s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+@keyframes bug-float {
+    0% { transform: translateY(-2px) rotate(-8deg) scale(1); opacity: 1; }
+    25% { transform: translateY(-8px) rotate(4deg) scale(1.05); }
+    50% { transform: translateY(-14px) rotate(12deg) scale(1.08); }
+    75% { transform: translateY(-8px) rotate(4deg) scale(1.05); }
+    100% { transform: translateY(-2px) rotate(-8deg) scale(1); opacity: 1; }
+}
+
+/* reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .bug-emoji { animation: none; transform: translateY(-2px) rotate(0); }
+}
+
+/* Hover 'magic' - upgraded pop + burst sparkle */
+.bug-wrap {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bug-emoji {
+    position: absolute;
+    right: -6px;
+    top: -6px;
+    font-size: 20px; /* slightly larger for visibility */
+    transform-origin: center;
+    /* slowed, smoother crawl */
+    animation: bug-crawl 12s ease-in-out infinite;
+    will-change: transform, left, top;
+    pointer-events: none;
+    transition: transform 220ms cubic-bezier(.2,.9,.3,1);
+}
+
+/* crawling behavior: moves around the word in a smooth path */
+@keyframes bug-crawl {
+    0% { transform: translate(0,0) rotate(0deg); }
+    12% { transform: translate(-6px,-6px) rotate(-10deg); }
+    25% { transform: translate(-12px,2px) rotate(6deg); }
+    37% { transform: translate(-6px,12px) rotate(18deg); }
+    50% { transform: translate(6px,14px) rotate(40deg); }
+    62% { transform: translate(18px,6px) rotate(70deg); }
+    75% { transform: translate(12px,-6px) rotate(100deg); }
+    87% { transform: translate(4px,-12px) rotate(130deg); }
+    100% { transform: translate(0,0) rotate(180deg); }
+}
+
+/* on hover, make the bug pause and slightly larger */
+.bug-wrap:hover .bug-emoji {
+    /* pause the crawl and make the bug pop slightly */
+    animation-play-state: paused;
+    transform: translate(-6px,-8px) scale(1.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bug-emoji { animation: none; transform: translate(0,0) rotate(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bug-emoji { animation: none; transform: translateY(-2px) rotate(0); }
+    .bug-wrap::after, .bug-wrap::before { transition: none; animation: none; opacity: 0; }
 }
