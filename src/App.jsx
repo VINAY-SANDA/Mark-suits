@@ -12,7 +12,7 @@ const App = () => {
   return (
     <StarryNightBackground 
       density={0.0001} 
-      twinkleSpeed={0.1} 
+      twinkleSpeed={1}
       shootingStars={true}
       nebulaColors={['#000000', '#111', '#000000']}
       overlayOpacity={0.0001}
