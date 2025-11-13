@@ -1,4 +1,4 @@
-import pach from "../assets/pacheloo.svg"
+import pach from "../../assets/pacheloo.svg"
 
 const RightHSe2 = () => {
   return (

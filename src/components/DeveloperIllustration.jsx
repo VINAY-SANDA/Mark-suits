@@ -14,7 +14,7 @@ export default function DeveloperIllustration({ className = '' }) {
     const svgEl = root.querySelector('svg')
     if (svgEl) {
       // ensure responsive sizing
-      svgEl.style.width = '100%'
+      svgEl.style.width = '90%'
       svgEl.style.height = 'auto'
       svgEl.setAttribute('preserveAspectRatio', 'xMidYMid meet')
       // if SVG doesn't have a role, add one for accessibility
@@ -41,7 +41,7 @@ export default function DeveloperIllustration({ className = '' }) {
             if (observer) observer.disconnect()
           }
         })
-      }, { threshold: 0.25 })
+      }, { threshold: 0.35 })
 
       observer.observe(root)
     } catch {

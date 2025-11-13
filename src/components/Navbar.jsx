@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
  <nav
       className="fixed top-0 left-0 right-0 z-50 w-full
-                 px-6 md:px-20 py-7
+                 px-6 md:px-20 py-5
                  font-display text-white
                  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10
                  border-b border-white/10"

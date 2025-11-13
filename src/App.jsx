@@ -6,7 +6,7 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import Navbar from './components/Navbar'
-import Normal from './pages/Normal'
+
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
              <Route path='/projects' element={<Projects/>}/>
              <Route path='/resume' element={<Resume/>}/>
          </Routes>
-
+        {/* Section 2 and Footer after main routes */}
       </div>
     </StarryNightBackground>
   )

@@ -1,4 +1,5 @@
-import image from "../assets/poser.jpg"
+import image from "../../assets/poser.jpg"
+import TypingEffect from "./TypingEffect"
 
 
 const Section1 = () => {
