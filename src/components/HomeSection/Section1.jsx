@@ -4,20 +4,20 @@ import TypingEffect from "./TypingEffect"
 
 const Section1 = () => {
   return (
-    <div className='h-screen w-full flex flex-col md:flex-row'>
-      <div className='h-1/2 md:h-full w-full md:w-1/2 flex flex-col justify-center gap-4 items-start pl-6 md:pl-35'>
-        <h2 className='text-5xl'>
+    <div className='min-h-screen w-full flex flex-col md:flex-row px-4 md:px-0 py-8 md:py-0'>
+      <div className='w-full md:w-1/2 flex flex-col justify-center gap-3 md:gap-4 items-start md:pl-20 lg:pl-35 mt-16 md:mt-0'>
+        <h2 className='text-3xl md:text-5xl'>
           Hi There <span className='hidden'>.</span>
         </h2>
-        <h3 className='text-4xl'>I'M <span className= "text-[#ffe02f] font-normal ">
+        <h3 className='text-2xl md:text-4xl'>I'M <span className= "text-[#ffe02f] font-normal ">
           VINAY SANDA
           </span></h3>
         <div>
-          <h1 className='text-4xl mt-14 text-[#ffe02f]'>Autodidact</h1>
+          <h1 className='text-2xl md:text-4xl mt-8 md:mt-14 text-[#ffe02f]'>Autodidact</h1>
         </div>
       </div>
-      <div className='h-1/2 md:h-full w-full md:w-1/2 flex justify-center items-center'>
-        <img src={image} alt="" title="vinay sanda" className='h-96 w-96 rounded-full grayscale' />
+      <div className='w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0'>
+        <img src={image} alt="Vinay Sanda" title="vinay sanda" className='h-64 w-64 md:h-96 md:w-96 rounded-full grayscale' />
       </div>
     </div>
   )

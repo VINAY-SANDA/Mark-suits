@@ -8,8 +8,19 @@
 /* Example usage */
 body {
     font-family: var(--font-display);
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+    min-width: 320px; /* Minimum mobile width */
 }
 
+/* Mobile-friendly base styles */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 .textcol{

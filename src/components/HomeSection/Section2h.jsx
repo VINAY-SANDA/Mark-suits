@@ -3,10 +3,10 @@ import RightHSe2 from './RightHSe2'
 
 const Section2h = () => {
   return (
-    <div className='h-screen flex '>
-      <div className='w-2/3 py-20 pl-5 flex items-center justify-center flex-col gap-8'>
-        <h1 className='text-3xl mr-24'> LET ME  <span className='textcol'><i>INTRODUCE MYSELF</i></span></h1>
-        <div className='capitalize tracking-widest flex flex-col gap-6 leading-loose px-10 py-4'>
+    <div className='min-h-screen flex flex-col md:flex-row px-2 md:px-0 py-8 md:py-0'>
+      <div className='w-full md:w-2/3 py-8 md:py-20 px-4 md:pl-5 flex items-center justify-center flex-col gap-4 md:gap-8'>
+        <h1 className='text-xl md:text-3xl text-center md:mr-24'> LET ME  <span className='textcol'><i>INTRODUCE MYSELF</i></span></h1>
+        <div className='capitalize tracking-wide md:tracking-widest flex flex-col gap-4 md:gap-6 leading-relaxed md:leading-loose px-2 md:px-10 py-2 md:py-4 text-sm md:text-base'>
           <p>
             I’m a <span className='text-[#ffd900]'><i>passionate developer</i><i></i></span> with a deep interest in <span className='text-[#ffe02f]'><i>technology, innovation</i></span> and real-world <span className='text-[#ffe02f]'><i>problem solving.</i></span>
           </p>

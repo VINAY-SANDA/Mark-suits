@@ -10,8 +10,9 @@ const Navbar = () => {
       style={{ WebkitBackdropFilter: "blur(8px)" }}
     >
       <div className="flex items-center justify-between">
-        <div className="text-lg md:text-2xl font-bold tracking-wide select-none">
-          VINAY SANDA
+        <div className="text-lg md:text-xl font-bold tracking-wide select-none text-red-600">
+         <Link to="/">VINAY SANDA</Link>
+          
         </div>
 
         {/* Desktop links */}
