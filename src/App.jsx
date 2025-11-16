@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import StarryNightBackground from './components/StarryNightBackground'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
@@ -6,9 +7,17 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import Navbar from './components/Navbar'
+import Preloader from './components/Preloader'
 
 
 const App = () => {
+  const [loading, setLoading] = useState(true)
+
+  // let Preloader call onFinish when it's done
+  const handlePreloaderFinish = () => setLoading(false)
+
+  if (loading) return <Preloader firstWordDuration={800} wordDuration={150} onFinish={handlePreloaderFinish} />
+
   return (
     <StarryNightBackground 
       density={0.0001} 

@@ -179,31 +179,26 @@ Example: .pixelify-sans-hero -> .pixelify-sans-hero { font-weight: 700; }
      color: #FFFF00; 
 }
 
-
-
-@theme {
-  --animate-drive: drive 8s linear infinite;
-  
-  @keyframes drive {
-    0% {
-      left: -300px;
-      transform: scaleX(1);
-    }
-    45% {
-      left: calc(100% + 50px);
-      transform: scaleX(1);
-    }
-    50% {
-      left: calc(100% + 50px);
-      transform: scaleX(-1);
-    }
-    95% {
-      left: -300px;
-      transform: scaleX(-1);
-    }
-    100% {
-      left: -300px;
-      transform: scaleX(1);
-    }
+/* Animation for drive */
+@keyframes drive {
+  0% {
+    left: -300px;
+    transform: scaleX(1);
+  }
+  45% {
+    left: calc(100% + 50px);
+    transform: scaleX(1);
+  }
+  50% {
+    left: calc(100% + 50px);
+    transform: scaleX(-1);
+  }
+  95% {
+    left: -300px;
+    transform: scaleX(-1);
+  }
+  100% {
+    left: -300px;
+    transform: scaleX(1);
   }
 }
