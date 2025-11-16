@@ -1,6 +1,6 @@
 import image from "../../assets/poser.jpg"
 "use client";
-import { LayoutTextFlip } from "../layout-text-flip";
+import { LayoutTextFlip } from "../Layout-text-flip.jsx";
 import { motion } from "motion/react";
 
 const Section1 = () => {
