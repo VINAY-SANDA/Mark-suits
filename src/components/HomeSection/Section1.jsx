@@ -1,6 +1,7 @@
 import image from "../../assets/poser.jpg"
-import TypingEffect from "./TypingEffect"
-
+"use client";
+import { LayoutTextFlip } from "../layout-text-flip";
+import { motion } from "motion/react";
 
 const Section1 = () => {
   return (
@@ -9,11 +10,17 @@ const Section1 = () => {
         <h2 className='text-3xl md:text-5xl'>
           Hi There <span className='hidden'>.</span>
         </h2>
-        <h3 className='text-2xl md:text-4xl'>I'M <span className= "text-[#ffe02f] font-normal ">
+        <h3 className='text-2xl md:text-4xl'>I'M <span className= "text-[#FFFF00] font-normal ">
           VINAY SANDA
           </span></h3>
         <div>
-          <h1 className='text-2xl md:text-4xl mt-8 md:mt-14 text-[#ffe02f]'>Autodidact</h1>
+          <h1 className='text-2xl md:text-4xl mt-8 md:mt-14 text-[#FFFF00]'>
+            <motion.div>
+        <LayoutTextFlip
+          words={["Freelancer", "Software Developer",]}
+        />
+         </motion.div>
+          </h1>
         </div>
       </div>
       <div className='w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0'>

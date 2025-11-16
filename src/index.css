@@ -165,3 +165,45 @@ Example: .pixelify-sans-hero -> .pixelify-sans-hero { font-weight: 700; }
     .bug-emoji { animation: none; transform: translateY(-2px) rotate(0); }
     .bug-wrap::after, .bug-wrap::before { transition: none; animation: none; opacity: 0; }
 }
+
+
+.textcol2{
+    color: rgb(230, 57, 57);
+}
+
+.textcolyellow{
+    color: #FFFF00;
+}
+
+.my-text {
+     color: #FFFF00; 
+}
+
+
+
+@theme {
+  --animate-drive: drive 8s linear infinite;
+  
+  @keyframes drive {
+    0% {
+      left: -300px;
+      transform: scaleX(1);
+    }
+    45% {
+      left: calc(100% + 50px);
+      transform: scaleX(1);
+    }
+    50% {
+      left: calc(100% + 50px);
+      transform: scaleX(-1);
+    }
+    95% {
+      left: -300px;
+      transform: scaleX(-1);
+    }
+    100% {
+      left: -300px;
+      transform: scaleX(1);
+    }
+  }
+}

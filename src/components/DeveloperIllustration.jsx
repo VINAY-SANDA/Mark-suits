@@ -14,8 +14,8 @@ export default function DeveloperIllustration({ className = '' }) {
     const svgEl = root.querySelector('svg')
     if (svgEl) {
       // ensure responsive sizing
-      svgEl.style.width = '90%'
-      svgEl.style.height = 'auto'
+      svgEl.style.width = '100%'
+      svgEl.style.height = '90%'
       svgEl.setAttribute('preserveAspectRatio', 'xMidYMid meet')
       // if SVG doesn't have a role, add one for accessibility
       if (!svgEl.getAttribute('role')) svgEl.setAttribute('role', 'img')

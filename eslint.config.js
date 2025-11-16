@@ -23,7 +23,8 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // allow React-style globals and uppercase/private names, and an explicit 'motion' helper import
+      'no-unused-vars': ['error', { varsIgnorePattern: '^(?:motion|[A-Z_])' }],
     },
   },
 ])

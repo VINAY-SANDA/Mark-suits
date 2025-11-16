@@ -8,15 +8,15 @@ const Section2h = () => {
         <h1 className='text-xl md:text-3xl text-center md:mr-24'> LET ME  <span className='textcol'><i>INTRODUCE MYSELF</i></span></h1>
         <div className='capitalize tracking-wide md:tracking-widest flex flex-col gap-4 md:gap-6 leading-relaxed md:leading-loose px-2 md:px-10 py-2 md:py-4 text-sm md:text-base'>
           <p>
-            I’m a <span className='text-[#ffd900]'><i>passionate developer</i><i></i></span> with a deep interest in <span className='text-[#ffe02f]'><i>technology, innovation</i></span> and real-world <span className='text-[#ffe02f]'><i>problem solving.</i></span>
+            I’m a <span className='text-[#FFFF00]'><i>passionate developer</i><i></i></span> with a deep interest in <span className='text-[#FFFF00]'><i>technology, innovation</i></span> and real-world <span className='text-[#FFFF00]'><i>problem solving.</i></span>
           </p>
 
           <p>
-            I specialize in <span className='text-[#ffe02f]'><i>Java</i></span> and <span className='text-[#ffe44a]'><i>Data Structures & Algorithms</i></span>, using them to build smart, efficient, and user-focused applications.
+            I specialize in <span className='text-[#FFFF00]'><i>Java</i></span> and <span className='text-[#FFFF00]'><i>Data Structures & Algorithms</i></span>, using them to build smart, efficient, and user-focused applications.
           </p>
 
           <p>
-            I believe every <span className='bug-wrap inline-block relative text-red-500'>bug<span className='bug-emoji' aria-hidden='true'>🐞</span><i></i></span> teaches something new  usually <span className='text-[#ffe02f]'><i>patience</i></span>, sometimes <span className='text-[#ffe02f]'><i>panic</i></span>, but always <span className='text-[#ffe02f]'><i>progress</i></span>.
+            I believe every <span className='bug-wrap inline-block relative text-red-500'>bug<span className='bug-emoji' aria-hidden='true'>🐞</span><i></i></span> teaches something new  usually <span className='text-[#FFFF00]'><i>patience</i></span>, sometimes <span className='text-[#FFFF00]'><i>panic</i></span>, but always <span className='text-[#FFFF00]'><i>progress</i></span>.
           </p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../assets/Vlogo.png'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -10,8 +11,11 @@ const Navbar = () => {
       style={{ WebkitBackdropFilter: "blur(8px)" }}
     >
       <div className="flex items-center justify-between">
-        <div className="text-lg md:text-xl font-bold tracking-wide select-none text-red-600">
-         <Link to="/">VINAY SANDA</Link>
+        <div className="text-lg md:text-xl font-bold tracking-wide select-none flex flex-row ">
+         <Link to="/">
+        <img src={logo} alt="Logo" className=" inline-block align-middle mr-2 h-15 w-15"/>
+         
+         </Link>
           
         </div>
 

@@ -13,7 +13,7 @@ const Homepage = () => {
       <Section2h />
       <div className='w-full flex flex-col items-center mt-4 md:-mt-20 gap-3 px-2'>
         <h2 className='text-xl md:text-2xl underline text-[#00BFFF] text-center'>FIND ME ON</h2>
-        <h5 className='text-sm md:text-base text-center'>Feel free to <span className='text-[#ffe02f]'>connect</span> with me</h5>
+        <h5 className='text-sm md:text-base text-center'>Feel free to <span className='text-[#FFFF00]'>connect</span> with me</h5>
         <div className='flex flex-wrap justify-center gap-6 md:gap-8 mt-2'>
           <a
             href="https://github.com/VINAY-SANDA"
@@ -31,7 +31,7 @@ const Homepage = () => {
             className="inline-block transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
             aria-label="LinkedIn"
           >
-            <SlSocialLinkedin className="bg-white text-black rounded-full p-2 text-3xl md:text-4xl" />
+            <SlSocialLinkedin className="bg-white text-black overflow-visible rounded-full p-2 text-3xl md:text-4xl" />
           </a>
           <a
             href="https://www.instagram.com/stark_.02_/"
