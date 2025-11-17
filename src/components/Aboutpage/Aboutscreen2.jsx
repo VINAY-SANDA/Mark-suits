@@ -2,8 +2,9 @@ import { FaJava, FaJs, FaPython, FaReact } from "react-icons/fa";
 import { IoLogoCss3, IoLogoHtml5 } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiIntellijidea, SiVercel } from "react-icons/si";
-import { VscCode } from "react-icons/vsc";
 import { ShineBorder } from "@/components/ui/shine-border";
+import { VscCode, VscVscode } from "react-icons/vsc";
+
 
 const Aboutscreen2 = () => {
   const skills = [
@@ -18,9 +19,10 @@ const Aboutscreen2 = () => {
 
   const tools = [
     { icon: SiIntellijidea, name: "IntelliJ IDEA", color: "#FE315D" },
-    { icon: VscCode, name: "VS Code", color: "#007ACC" },
+    { icon: VscVscode, name: "VS Code", color: "#007ACC" },
     { icon: SiVercel, name: "Vercel", color: "#FFFFFF" },
   ];
+
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center px-4 pt-2 pb-12 md:pt-4 md:pb-16 gap-16 md:gap-20">

@@ -6,15 +6,15 @@ const Aboutscreen1 = () => {
 
   return (
     <div className="min-h-screen w-full flex flex-col md:grid md:grid-cols-12 px-4 md:px-0 pt-2 md:pt-4">
-      <div className="md:col-span-7 flex flex-col justify-center md:px-16 pl-6 text-white">
+      <div className="md:col-span-7 flex flex-col justify-center px-4 md:px-16 py-8 md:py-0 text-white">
 
         {/* Heading */}
-        <h1 className="underline text-2xl md:text-3xl mb-4">
+        <h1 className="underline text-3xl md:text-4xl mb-6 md:mb-4">
           Who AM <i className="my-text underline">I</i>
         </h1>
 
         {/* Main paragraph */}
-        <p className="text-base md:text-[1rem] mb-2 leading-8">
+        <p className="text-base md:text-lg mb-4 md:mb-2 leading-7 md:leading-8">
           I’m <span className="my-text font-semibold">Vinay Sanda</span>. I am
           currently a student pursuing{" "}
           <span className="my-text">B.Tech</span> in the{" "}
@@ -43,10 +43,10 @@ const Aboutscreen1 = () => {
         <div
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
-          className="mt-6 text-center cursor-pointer"
+          className="mt-8 md:mt-6 text-center cursor-pointer"
         >
           {/* Quote (red) */}
-          <p className="text-xs text-red-100">
+          <p className="text-sm md:text-base text-red-100">
             "No amount of money ever bought a second of time."
           </p>
 
@@ -62,8 +62,8 @@ const Aboutscreen1 = () => {
       </div>
 
       {/* Illustration */}
-      <div className="md:col-span-5 flex items-center justify-center py-4">
-        <DeveloperIllustration className="w-full max-w-sm md:max-w-lg lg:max-w-xl h-auto mt-4 md:mt-8" />
+      <div className="md:col-span-5 flex items-center justify-center py-8 md:py-4">
+        <DeveloperIllustration className="w-full max-w-xs md:max-w-md lg:max-w-xl h-auto" />
       </div>
     </div>
   );
