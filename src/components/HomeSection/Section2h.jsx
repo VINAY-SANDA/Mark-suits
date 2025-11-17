@@ -3,7 +3,7 @@ import RightHSe2 from './RightHSe2'
 
 const Section2h = () => {
   return (
-    <div className='min-h-screen flex flex-col md:flex-row px-2 md:px-0 py-8 md:py-0'>
+    <div className='min-h-screen flex flex-col md:flex-row px-4 md:px-0 pt-2 md:pt-0 pb-8 md:pb-0'>
       <div className='w-full md:w-2/3 py-8 md:py-20 px-4 md:pl-5 flex items-center justify-center flex-col gap-4 md:gap-8'>
         <h1 className='text-xl md:text-3xl text-center md:mr-24'> LET ME  <span className='textcol'><i>INTRODUCE MYSELF</i></span></h1>
         <div className='capitalize tracking-wide md:tracking-widest flex flex-col gap-4 md:gap-6 leading-relaxed md:leading-loose px-2 md:px-10 py-2 md:py-4 text-sm md:text-base'>

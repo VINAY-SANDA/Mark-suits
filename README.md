@@ -2,3 +2,5 @@
 
 text-[#FFFF00]"-- a type of yellow
 "text-[#00BFFF]" blue gradeient
+
+

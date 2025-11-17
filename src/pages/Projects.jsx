@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='min-h-screen w-full px-2 md:px-8 py-8 flex flex-col items-center'>
+    <div className='min-h-screen w-full px-4 md:px-8 pt-2 md:pt-4 pb-8 flex flex-col items-center'>
       <h1 className='text-xl md:text-3xl font-bold mb-6'>Projects</h1>
       {/* Add your project cards/components here, use flex-col and gap for stacking */}
       <div className='w-full flex flex-col md:flex-row flex-wrap gap-6 justify-center'>

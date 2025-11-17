@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 const Preloader = ({
   words = ["Hello", "नमस्ते", "Hola", "Bonjour"],
   wordDuration = 800, // duration to show each word
-  firstWordDuration = 800, // duration to show first word (Hello)
+  firstWordDuration = 500, // duration to show first word (Hello)
   fadeDuration = 300, // fade animation duration (ms)
   onFinish = null,
   className = "h-screen w-full flex items-center justify-center bg-white",

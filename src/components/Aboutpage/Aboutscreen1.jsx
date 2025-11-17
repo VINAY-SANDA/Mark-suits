@@ -5,7 +5,7 @@ const Aboutscreen1 = () => {
   const [isHover, setIsHover] = useState(false);
 
   return (
-    <div className="min-h-screen w-full flex flex-col md:grid md:grid-cols-12 px-2 md:px-0">
+    <div className="min-h-screen w-full flex flex-col md:grid md:grid-cols-12 px-4 md:px-0 pt-2 md:pt-4">
       <div className="md:col-span-7 flex flex-col justify-center md:px-16 pl-6 text-white">
 
         {/* Heading */}
