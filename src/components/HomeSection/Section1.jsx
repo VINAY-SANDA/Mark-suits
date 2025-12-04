@@ -1,4 +1,4 @@
-import image from "../../assets/poser.jpg"
+import image from "../../assets/pap.png"
 "use client";
 import { LayoutTextFlip } from "../Layout-text-flip.jsx";
 import { motion } from "motion/react";
@@ -58,7 +58,7 @@ const Section1 = () => {
           className="relative"
         >
           <div className="absolute inset-0 bg-[#00BFFF] rounded-full blur-3xl opacity-20 animate-pulse"></div>
-          <img src={image} alt="Vinay Sanda" title="vinay sanda" className='h-72 w-72 md:h-96 md:w-96 rounded-full grayscale hover:grayscale-0 transition-all duration-500 border-4 border-white/10 relative z-10 object-cover shadow-2xl' />
+          <img src={image} alt="Vinay Sanda" title="vinay sanda" className='h-72 w-72 md:h-96 md:w-96 rounded-full  hover:grayscale-0 transition-all duration-500 border-4 border-white/10 relative z-10 object-cover shadow-2xl' />
         </motion.div>
       </div>
 
