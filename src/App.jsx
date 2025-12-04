@@ -8,6 +8,8 @@ import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import Navbar from './components/Navbar'
 import Preloader from './components/Preloader'
+import Contact from './pages/Contact'
+import ScrollToTop from './components/ScrollToTop'
 
 
 const App = () => {
@@ -33,7 +35,9 @@ const App = () => {
              <Route path='/about' element={<About/>}/>
              <Route path='/projects' element={<Projects/>}/>
              <Route path='/resume' element={<Resume/>}/>
+             <Route path='/contact' element={<Contact/>}/>
          </Routes>
+        <ScrollToTop />
         {/* Section 2 and Footer after main routes */}
       </div>
     </StarryNightBackground>

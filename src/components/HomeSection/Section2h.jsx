@@ -10,11 +10,6 @@ const Section2h = () => {
           <p>
             I’m a <span className='text-[#FFFF00]'><i>passionate developer</i><i></i></span> with a deep interest in <span className='text-[#FFFF00]'><i>technology, innovation</i></span> and real-world <span className='text-[#FFFF00]'><i>problem solving.</i></span>
           </p>
-
-          <p>
-            I specialize in <span className='text-[#FFFF00]'><i>Java</i></span> and <span className='text-[#FFFF00]'><i>Data Structures & Algorithms</i></span>, using them to build smart, efficient, and user-focused applications.
-          </p>
-
           <p>
             I believe every <span className='bug-wrap inline-block relative text-red-500'>bug<span className='bug-emoji' aria-hidden='true'>🐞</span><i></i></span> teaches something new  usually <span className='text-[#FFFF00]'><i>patience</i></span>, sometimes <span className='text-[#FFFF00]'><i>panic</i></span>, but always <span className='text-[#FFFF00]'><i>progress</i></span>.
           </p>
